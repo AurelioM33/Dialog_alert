@@ -26,7 +26,10 @@ class _MyPageState extends State<MyPage> {
       builder: (context) => AlertDialog(
         actions: [
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              // Botao para fechar o campo
+              Navigator.pop(context);
+            },
             child: const Text('Close'),
           ),
         ],
